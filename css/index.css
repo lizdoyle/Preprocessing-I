@@ -134,3 +134,29 @@ html,
 body {
   height: 100%;
 }
+html {
+  font-family: 'Catamaran', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  max-width: 900px;
+  width: 100%;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header h2 {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.6rem;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header nav a {
+  padding: 15px;
+}

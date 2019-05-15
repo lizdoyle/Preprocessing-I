@@ -56,9 +56,43 @@ table {
 html, body {
     height: 100%;
 }
+// General Styles
 
-// Start of header page
 html {
-	
+	font-family: 'Catamaran', sans-serif;
+	font-family: 'Roboto', sans-serif;	
+}
+
+.container {
+	max-width: 900px;
+	width: 100%;
+
+	@media(max-width: 768px){
+
+	}
+	@media(max-width: 450px){
+		
+	}
+}
+// Start of header page
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	h2 {
+		font-family: 'Catamaran', sans-serif;
+		font-size: 1.6rem;
+	}
+	nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		a {
+			padding: 15px;
+		}
+	}
 }
 
