@@ -222,6 +222,20 @@ aside {
   flex-direction: column;
   align-content: center;
   justify-content: flex-start;
+  margin-top: 4rem;
+}
+aside h3 {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 2rem;
+  color: #0EB790;
+  margin-bottom: 2.5rem;
+}
+aside ul {
+  margin-left: 10px;
+  padding: 20px;
+}
+aside ul li {
+  list-style-type: circle;
 }
 footer {
   width: 100%;
