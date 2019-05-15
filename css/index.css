@@ -196,11 +196,14 @@ header nav a {
 }
 main {
   width: 55%;
+  height: auto;
+  padding-bottom: 15%;
   float: left;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  background-color: #0EB790;
 }
 main h2 {
   font-family: 'Catamaran', sans-serif;
@@ -211,7 +214,7 @@ main h2 {
 main p {
   font-family: 'Catamaran', sans-serif;
   font-size: 1.2rem;
-  color: #8D3D20;
+  color: #190A4F;
   margin: 10px;
   padding: 20px 50px;
 }
@@ -222,7 +225,8 @@ aside {
   flex-direction: column;
   align-content: center;
   justify-content: flex-start;
-  margin-top: 4rem;
+  padding-top: 4rem;
+  background-color: #EEEA8D;
 }
 aside h3 {
   font-family: 'Catamaran', sans-serif;
@@ -236,6 +240,23 @@ aside ul {
 }
 aside ul li {
   list-style-type: circle;
+  color: #190A4F;
+  font-size: 1.4rem;
+  padding: 10px;
+}
+aside h4 {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 2rem;
+  color: #8D3D20;
+  margin-bottom: 2.5rem;
+  margin-left: 2.5rem;
+}
+aside p {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.4rem;
+  color: #190A4F;
+  margin-bottom: 2.5rem;
+  margin-left: 2.5rem;
 }
 footer {
   width: 100%;
@@ -244,30 +265,31 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #EC9D24;
 }
 footer h3 {
   font-family: 'Catamaran', sans-serif;
   font-size: 2rem;
-  color: #EC9D24;
-  margin-top: 25px;
+  color: #190A4F;
+  margin-top: 3rem;
 }
 footer form {
   font-family: 'Catamaran', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.2em;
   color: #190A4F;
-  margin: 25px;
-  padding: 30px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: space-between;
 }
 footer form label {
   margin: 10px 0;
-  padding: 15px 0;
+  padding: 0 10px;
+  float: left;
 }
 footer form input {
-  padding: 1rem;
+  padding: 1rem, 0.7rem;
+  width: 40%;
 }
 footer form textarea {
   padding: 4rem;
