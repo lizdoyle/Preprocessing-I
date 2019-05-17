@@ -120,8 +120,9 @@ header {
 
 	h2 {
 		font-family: 'Catamaran', sans-serif;
-		font-size: 1.6rem;
-		color: @main-color;
+		font-size: 1.4rem;
+		color: white;
+		padding-left: 10px;
 	}
 	nav {
 		display: flex;
@@ -130,8 +131,9 @@ header {
 
 		a {
 			padding: 15px;
-			font-size: 1.3rem;
+			font-size: 1rem;
 			color: white;
+			text-decoration: none;
 		}
 	}
 
@@ -156,16 +158,22 @@ header {
 			width: 400px;
 			height: auto;
 			margin-left: 0 0 0 100px;
+
 				h1 {
+					width: 100%;
+					padding-top: 140px;
 					font-family: @catfont;
 					font-size: 2.6rem;
-					color: @third-color;
+					color: white;
+					z-index: 1;
 
 					
 				}
 				h4 {
+					width: 100%;
 					font-family: @catfont;					font-size: 1.8rem;
 					color: @third-color;
+					font-size: 1.2rem;
 				}	
 
 		}
@@ -184,23 +192,24 @@ main {
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
-	background-color: @second-color;
+	background-color: @main-color;
 
 	h2 {
 		font-family: @catfont;		
 		font-size: 1.8rem;
-		color: @main-color;
+		color: @second-color;
 		margin: 30px 0 0 40px;
 	}
 	p {
 		font-family: @robot;
 		font-size: 1.2rem;
-		color: @main-color;
+		color: white;
 		margin: 10px;
 		padding: 20px 50px;
 	}
 }
 
+// Sidebar
 aside {
 	width: 45%;
 	float: right;
@@ -208,9 +217,11 @@ aside {
 	flex-direction: column;
 	align-content: center;
 	justify-content: flex-start;
-	padding-top: 4rem;
+	padding-top: 25px;
+	padding-left: 20px;
 	background-color: @third-color;
 
+	// skills section & list
 	h3 {
 		font-family: 'Catamaran', sans-serif;
 		font-size: 2rem;
@@ -229,12 +240,14 @@ aside {
 			
 		}
 	}
+
+	// education section
 	h4 {
 		font-family: 'Catamaran', sans-serif;
 		font-size: 2rem;
 		color: @fifth-color;
 		margin-bottom: 2.5rem;
-		margin-left: 2.5rem;
+		margin-left: 15px;
 	}
 	p {
 	
@@ -246,6 +259,8 @@ aside {
 
 	}
 }
+
+// footer
 
 footer {
 	width: 100%;
