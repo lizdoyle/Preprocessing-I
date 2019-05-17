@@ -58,6 +58,8 @@ html, body {
 }
 // Variables
 
+//color
+
 @main-color: @violent-violet;
 @second-color: @niagra;
 @third-color: @khaki;
@@ -70,26 +72,42 @@ html, body {
 @carrot-orange: #EC9D24;
 @cumin: #8D3D20;
 
+// font
+@catfont: font-family: 'Catamaran', sans-serif;
+@robot: font-family: 'Roboto', sans-serif;
+
+//escaping
+@mobile: ~"(max-width: 500px)";
+
+//Mixins
+
+.center(){
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
 
 
 
 // General Styles
 
 html {
-	font-family: 'Catamaran', sans-serif;
-	font-family: 'Roboto', sans-serif;	
+	@catfont;
+	@robot;	
 }
 
 .container {
 	max-width: 900px;
 	width: 100%;
 
-	@media(max-width: 768px){
+}
 
-	}
-	@media(max-width: 450px){
-		
-	}
+h1 h2 h3 h4 h5 {
+	@catfont;
+}
+
+p {
+	@robot;
 }
 // Start of header page
 header {
@@ -97,6 +115,8 @@ header {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	background-color: @main-color;
+	color: white;
 
 	h2 {
 		font-family: 'Catamaran', sans-serif;
@@ -111,7 +131,7 @@ header {
 		a {
 			padding: 15px;
 			font-size: 1.3rem;
-			color: @main-color;
+			color: white;
 		}
 	}
 
@@ -131,23 +151,20 @@ header {
 	margin:auto;
 	padding:0;
 		.top {
-			display: flex;
+			.center();
 			flex-direction: column;
-			justify-content: center;
-			align-items: center;
 			width: 400px;
 			height: auto;
 			margin-left: 0 0 0 100px;
 				h1 {
-					font-family: 'Catamaran', sans-serif;
+					@catfont;
 					font-size: 2.6rem;
 					color: @third-color;
 
 					
 				}
 				h4 {
-					font-family: 'Catamaran', sans-serif;
-					font-size: 1.8rem;
+					@catfont;					font-size: 1.8rem;
 					color: @third-color;
 				}	
 
@@ -170,13 +187,12 @@ main {
 	background-color: @second-color;
 
 	h2 {
-		font-family: 'Catamaran', sans-serif;
-		font-size: 1.8rem;
+		@catfont;		font-size: 1.8rem;
 		color: @main-color;
 		margin: 30px 0 0 40px;
 	}
 	p {
-		font-family: 'Catamaran', sans-serif;
+		@robot;
 		font-size: 1.2rem;
 		color: @main-color;
 		margin: 10px;
