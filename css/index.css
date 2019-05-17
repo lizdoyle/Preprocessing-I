@@ -136,17 +136,24 @@ body {
 }
 html {
   font-family: 'Catamaran', sans-serif;
-  font-family: 'Roboto', sans-serif;
 }
 .container {
   max-width: 900px;
   width: 100%;
+}
+h1 h2 h3 h4 h5 {
+  font-family: 'Catamaran', sans-serif;
+}
+p {
+  font-family: 'Roboto', sans-serif;
 }
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: #190A4F;
+  color: white;
 }
 header h2 {
   font-family: 'Catamaran', sans-serif;
@@ -161,7 +168,7 @@ header nav {
 header nav a {
   padding: 15px;
   font-size: 1.3rem;
-  color: #190A4F;
+  color: white;
 }
 .hero {
   width: 100%;
@@ -177,9 +184,9 @@ header nav a {
 }
 .hero .top {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-content: center;
+  flex-direction: column;
   width: 400px;
   height: auto;
   margin-left: 0 0 0 100px;
@@ -212,7 +219,7 @@ main h2 {
   margin: 30px 0 0 40px;
 }
 main p {
-  font-family: 'Catamaran', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
   color: #190A4F;
   margin: 10px;
