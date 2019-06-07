@@ -7,13 +7,136 @@
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Catamaran|Roboto" rel="stylesheet">
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
-<body>
-  <h1>My Resume</h1>
-</body>
+  <body> 
+    <div class="container"></div>
+      <header>
+        <h2>Resume of Elizabeth Johnson</h2>
+        <!-- [ ] Content: Navigation - Build a simple navigation with 4 items of your choosing -->
+
+        <nav>
+          <a href="/index.html">Home</a>
+          <a href="#">About Me</a>
+          <a href="https://www.elizabethjohnson.me">Portfolio</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
+      
+      <section class="hero">
+        <div class="top">
+          <h1>Everyone Needs A Career</h1>
+          <h4>Become a part in providing a chance at success!</h4>
+        </div>  
+      </section>
+      <main> 
+ <!-- Content: Intro - Have a short introduction as to why you would be a good hire -->
+
+        <section class="intro">
+          <h2>Meet Me: Elizabeth Johnson</h2>
+          <p> Hi, I'm Elizabeth Johnson, and I am dedicated to learning. From a passion for both people, reading, and an accute attention to detail, I would be a great asset to your professional development team. I work well with others, have a quirky sense of comedic relief, yet am well rounded for aspects of teamwork. </p>
+          <p>I have experience in both behind the scenes work, as well as leadership skills, and am never afraid to ask questions, dive into the meat of a tough challenge, or simply make sure that things are executed to the absolute best of my ability (whilie finding more ways to learn in the process.</p>
+          
+        </section>
+
+        <section class="history">
+<!-- Content: Work History - Showcase your work history somewhere on your resume -->
+            <h2>Work History</h2>
+
+            <table>
+              <caption> Here is a short list of my cumulative experiences</caption>
+              <tr>
+                  <th>Years:</th>
+                  <th>Company:</th>
+                  <th>Position:</th>
+                  <th>Location:</th>
+                  <th>Details:</th>
+                  
+                </tr>
+                <tr>
+                  <td>2019-Current</td>
+                  <td>California Marketing Group</td>
+                  <td>CSR</td>
+                  <td>Tallahassee, FL</td>
+                  <td>Outbound Calls of 500-1000 per day, selling various products with daily sales goals</td>
+                </tr>
+                 <tr>
+                  <td>2015-2018</td>
+                  <td>Overby Seawell Company</td>
+                  <td>B2B CSR Team Lead</td>
+                  <td>Kennesaw, GA</td>
+                  <td>Lead a team of 15-30 CSR agents, provide training, maintain B2B client development issues, and provide one call resolution, while also maintaining escrow payments and tracking.</td>
+                </tr>
+                 <tr>
+                  <td>2014-2015</td>
+                  <td>Alorica</td>
+                  <td>CSR</td>
+                  <td>Tallahassee, FL</td>
+                  <td>Answer 100+ calls per day, Provide Excellent Customer Service.</td>
+                </tr>
+                 <tr>
+                  <td>2011-2014</td>
+                  <td>Randstad USA</td>
+                  <td>Various Administrative Roles</td>
+                  <td>Atlanta, GA</td>
+                  <td>Various roles as an Administrative Assistant, Data Entry Clerk, and Lead Generation Specialist, under contracts with Randstad Staffing.</td>
+                </tr>
+            </table>
+        </section>
+
+
+
+      </main>
+      <aside class="skills">
+         <section class="list"> <!-- Content: Skills - Showcase a list of skills you have somewhere on your resume -->
+          <h3>My Skills</h3>
+             <ul>
+                 <li>HTML</li>
+                 <li> CSS / LESS /SASS / SCSS</li>
+                 <li> JavaScript</li>
+                 <li> Data Entry </li>
+                 <li> Call Center</li>
+                 <li> Administrative</li>
+                 <li> Clerical</li>
+                 <li> Typing</li>
+                 <li> Business Development </li>
+                 <li> Marketing</li>
+         </ul>
+         </section>
+         <section class="education">
+           <h4>Education</h4>
+          <p> 2019-2020  <span>Lambda School</span> Full Stack Web Development</p>
+          <p> 2013-2018  <span> Capella University</span> B.S. Psychology</p>
+           
+         </section>
+      </aside>
+
+      <footer> 
+<!-- Content: Contact - Provide some way a potential employer could contact you.  Phone number, email, or a full on contact form (doesn't have to work) -->
+        <h3> Contact Me</h3>
+        <form action="Contact">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="firstname" placeholder="Full Name" />
+          <div>
+          <div>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="email address" placeholder="Email Address" />
+          </div>
+          <div>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message" placeholder="Your Message Here"></textarea>
+            <button>Submit</button>
+
+        </form>
+
+      </footer>
+
+
+
+  </div>
+  </body>
 </html>

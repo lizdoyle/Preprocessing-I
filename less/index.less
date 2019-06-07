@@ -56,4 +56,254 @@ table {
 html, body {
     height: 100%;
 }
+// Variables
 
+//color
+
+@main-color: @violent-violet;
+@second-color: @niagra;
+@third-color: @khaki;
+@fourth-color: @carrot-orange;
+@fifth-color: @cumin;
+
+@violent-violet: #190A4F;
+@niagra: #0EB790;
+@khaki: #EEEA8D;
+@carrot-orange: #EC9D24;
+@cumin: #8D3D20;
+
+// font
+@catfont: 'Catamaran', sans-serif;
+@robot: 'Roboto', sans-serif;
+
+//escaping
+@mobile: ~"(max-width: 500px)";
+
+//Mixins
+
+.center(){
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+
+
+// General Styles
+
+html {
+	font-family: @catfont;
+
+}
+
+.container {
+	max-width: 900px;
+	width: 100%;
+
+}
+
+h1 h2 h3 h4 h5 {
+	font-family: @catfont;
+}
+
+p {
+	font-family: @robot;
+}
+// Start of header page
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: @main-color;
+	color: white;
+
+	h2 {
+		font-family: 'Catamaran', sans-serif;
+		font-size: 1.4rem;
+		color: white;
+		padding-left: 10px;
+	}
+	nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		a {
+			padding: 15px;
+			font-size: 1rem;
+			color: white;
+			text-decoration: none;
+		}
+	}
+
+
+
+
+}// Hero
+
+.hero {
+	width: 100%;
+	height:400px;
+	background-image: url("/images/hero.jpg");
+	background-size: cover; /* or contain depending on what you want */
+	background-position: center center;
+	background-repeat: no-repeat;
+	text-align:center;
+	margin:auto;
+	padding:0;
+		.top {
+			.center();
+			flex-direction: column;
+			width: 400px;
+			height: auto;
+			margin-left: 0 0 0 100px;
+
+				h1 {
+					width: 100%;
+					padding-top: 140px;
+					font-family: @catfont;
+					font-size: 2.6rem;
+					color: white;
+					z-index: 1;
+
+					
+				}
+				h4 {
+					width: 100%;
+					font-family: @catfont;					font-size: 1.8rem;
+					color: @third-color;
+					font-size: 1.2rem;
+				}	
+
+		}
+		
+
+	}
+	// Main Section
+
+
+main {
+	width: 55%;
+	height: auto;
+	padding-bottom: 15%;
+	float: left;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	background-color: @main-color;
+
+	h2 {
+		font-family: @catfont;		
+		font-size: 1.8rem;
+		color: @second-color;
+		margin: 30px 0 0 40px;
+	}
+	p {
+		font-family: @robot;
+		font-size: 1.2rem;
+		color: white;
+		margin: 10px;
+		padding: 20px 50px;
+	}
+}
+
+// Sidebar
+aside {
+	width: 45%;
+	float: right;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: flex-start;
+	padding-top: 25px;
+	padding-left: 20px;
+	background-color: @third-color;
+
+	// skills section & list
+	h3 {
+		font-family: 'Catamaran', sans-serif;
+		font-size: 2rem;
+		color: @second-color;
+		margin-bottom: 2.5rem;
+	}
+	ul {
+		margin-left: 10px;
+		padding: 20px;
+
+		li {
+			list-style-type: circle;
+			color: @main-color;
+			font-size: 1.4rem;
+			padding: 10px;
+			
+		}
+	}
+
+	// education section
+	h4 {
+		font-family: 'Catamaran', sans-serif;
+		font-size: 2rem;
+		color: @fifth-color;
+		margin-bottom: 2.5rem;
+		margin-left: 15px;
+	}
+	p {
+	
+		font-family: 'Catamaran', sans-serif;
+		font-size: 1.4rem;
+		color: @main-color;
+		margin-bottom: 2.5rem;
+		margin-left: 2.5rem;
+
+	}
+}
+
+// footer
+
+footer {
+	width: 100%;
+	float: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color:@fourth-color;
+
+	h3 {
+		font-family: 'Catamaran', sans-serif;
+		font-size: 2rem;
+		color: @main-color;
+		margin-top: 3rem;
+		
+	}
+
+	// Contact Form
+	form {
+		font-family: 'Catamaran', sans-serif;
+		font-size: 1.2em;
+		color: @main-color;
+		// margin: 25px;
+		// padding: 30px 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: space-between;
+		
+		label {
+			margin: 10px 0;
+			padding: 0 10px;
+			float: left;
+			
+		}
+		input {
+			padding: 1rem, 0.7rem;
+			width: 40%;
+				}
+		textarea {
+			padding: 4rem;
+		}
+
+	}
+}
